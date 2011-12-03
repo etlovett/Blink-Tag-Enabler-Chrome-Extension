@@ -1,0 +1,13 @@
+{
+  "name": "<blink> Tag Enabler",
+  "version": "1.0",
+  "description": "Makes the <blink> tag work in Chrome.",
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["blink.js"],
+    "all_frames": true
+  }],
+  "content_security_policy": "default-src 'self'",
+  "homepage_url": "https://github.com/etlovett/Blink-Tag-Enabler-Chrome-Extension",
+  "offline_enabled": true
+}
